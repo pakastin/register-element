@@ -2,7 +2,8 @@
   "name": "register-element",
   "version": "0.0.1",
   "description": "document.registerElement shortcut",
-  "main": "index.js",
+  "jsnext:main": "index.js",
+  "main": "dist/register-element.js",
   "scripts": {
     "build": "npm run build-js && npm run uglify-js",
     "build-js": "rollup -n registerElement -f umd index.js -o dist/register-element.js",
