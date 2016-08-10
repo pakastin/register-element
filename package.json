@@ -1,6 +1,6 @@
 {
   "name": "register-element",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "document.registerElement shortcut",
   "jsnext:main": "index.js",
   "main": "dist/register-element.js",
