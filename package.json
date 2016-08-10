@@ -1,0 +1,26 @@
+{
+  "name": "register-element",
+  "version": "0.0.1",
+  "description": "document.registerElement shortcut",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-js && npm run uglify-js",
+    "build-js": "rollup -n registerElement -f umd index.js -o dist/register-element.js",
+    "uglify-js": "uglifyjs dist/register-element.js -cmo dist/register-element.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pakastin/register-element.git"
+  },
+  "author": "Juha Lindstedt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pakastin/register-element/issues"
+  },
+  "homepage": "https://github.com/pakastin/register-element#readme",
+  "devDependencies": {
+    "rollup": "~0.34.7",
+    "uglifyjs": "~2.4.10"
+  }
+}
